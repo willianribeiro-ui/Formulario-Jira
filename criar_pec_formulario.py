@@ -399,7 +399,6 @@ def create_jira_pec(payload: dict,
             'description':       descricao_adf,
             'customfield_10274': empresa_options,   # Empresa Cliente
             'customfield_10126': modulos_field,     # Módulo SAAM
-            'priority':          {'name': prioridade},
         }
     }
 
