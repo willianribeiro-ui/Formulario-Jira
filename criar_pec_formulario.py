@@ -403,6 +403,7 @@ def create_jira_pec(payload: dict,
     }
 
     resp = jira_post('/rest/api/3/issue', body)
+    log(f'Body enviado: {json.dumps(body, ensure_ascii=False)[:500]}')
     if resp.status_code in (200, 201):
         return resp.json().get('key')
 
